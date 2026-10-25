@@ -1,0 +1,801 @@
+<!DOCTYPE html><html lang="id"><head>
+    <meta charset="UTF-8">
+    <title>Soal ATS PAI Kelas 4 SD Siap Cetak (25 Nomor Lengkap)</title>
+    <style>
+        @page { margin: 0; }
+        *, *::before, *::after { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; }
+        html { background-color: #f1f5f9; }
+        @media (prefers-color-scheme: dark) {
+            html { background-color: #0f172a; }
+        }
+        body {
+            padding: 24px 0;
+            margin: 0 auto;
+            max-width: 900px !important;
+            border: none !important;
+            background: transparent !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1e293b;
+        }
+        .page {
+            height: 297mm;
+            margin: 0 auto 12px auto;
+            padding: 16mm 18mm 12mm 18mm;
+            background-color: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+        @media screen and (max-width: 600px) {
+            body { padding: 8px 0; }
+            .page { margin: 0 auto 8px auto; border: none; padding: 12px 14px; }
+        }
+        .page-content {
+            flex: 1 1 0;
+            min-height: 0;
+            overflow: hidden;
+        }
+        .page-content > * + * {
+            margin-top: 12px;
+        }
+        .page-content > :is(h1, h2, h3, h4) + * {
+            margin-top: 6px;
+        }
+        .page-footer {
+            flex-shrink: 0;
+            margin-top: auto;
+            padding-top: 3mm;
+            border-top: 1.5px solid #0f766e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 8.5pt;
+            color: #475569;
+            font-weight: 600;
+        }
+
+        /* Header / Kop Soal */
+        .header-box {
+            border: 2px solid #0f766e;
+            border-radius: 6px;
+            padding: 10px 14px;
+            background-color: #f0fdf4;
+            margin-bottom: 10px;
+        }
+        .header-title {
+            text-align: center;
+            font-weight: 800;
+            font-size: 11.5pt;
+            color: #0f766e;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            border-bottom: 1.5px solid #0f766e;
+            padding-bottom: 6px;
+            margin-bottom: 8px;
+        }
+        .meta-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9pt;
+        }
+        .meta-table td {
+            padding: 3px 4px;
+            vertical-align: middle;
+        }
+        .meta-label {
+            font-weight: 600;
+            color: #334155;
+            width: 15%;
+        }
+        .meta-dots {
+            width: 2%;
+        }
+        .meta-val {
+            width: 33%;
+            border-bottom: 1px dotted #94a3b8;
+            color: #0f172a;
+            font-weight: 500;
+        }
+
+        /* Petunjuk Umum Box */
+        .petunjuk-box {
+            background-color: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-left: 4px solid #0f766e;
+            padding: 6px 10px;
+            font-size: 8.5pt;
+            color: #334155;
+            border-radius: 4px;
+        }
+        .petunjuk-title {
+            font-weight: 700;
+            color: #0f766e;
+            margin-bottom: 2px;
+        }
+        .petunjuk-list {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        /* Section Header */
+        .section-header {
+            background-color: #0f766e;
+            color: #ffffff;
+            padding: 5px 10px;
+            font-weight: 700;
+            font-size: 9.5pt;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 6px;
+        }
+        .section-desc {
+            font-size: 8.5pt;
+            font-style: italic;
+            color: #f0fdf4;
+            font-weight: 400;
+        }
+
+        /* Questions Structure */
+        .q-block {
+            margin-bottom: 10px;
+            page-break-inside: avoid;
+        }
+        .q-text {
+            font-weight: 500;
+            margin-bottom: 4px;
+            display: flex;
+        }
+        .q-num {
+            font-weight: 700;
+            min-width: 24px;
+            color: #0f766e;
+        }
+        .q-body {
+            flex: 1;
+        }
+
+        /* Multiple Choice Options */
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 16px;
+            padding-left: 24px;
+            font-size: 9.5pt;
+        }
+        .opt-item {
+            display: flex;
+            align-items: baseline;
+        }
+        .opt-letter {
+            font-weight: 700;
+            margin-right: 6px;
+            color: #0f766e;
+        }
+
+        /* Checkbox list for Complex Choice */
+        .complex-options {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding-left: 24px;
+            font-size: 9.5pt;
+        }
+        .cb-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        .cb-box {
+            width: 14px;
+            height: 14px;
+            border: 1.5px solid #0f766e;
+            border-radius: 3px;
+            margin-top: 2px;
+            flex-shrink: 0;
+            background: #fff;
+        }
+
+        /* Tables for True/False and Matching */
+        .exam-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+        }
+        .exam-table th, .exam-table td {
+            border: 1px solid #94a3b8;
+            padding: 5px 8px;
+            text-align: left;
+        }
+        .exam-table th {
+            background-color: #e2e8f0;
+            color: #0f766e;
+            font-weight: 700;
+            text-align: center;
+        }
+        .exam-table .col-center {
+            text-align: center;
+        }
+        .col-cb {
+            width: 55px;
+            text-align: center;
+        }
+
+        /* Fill in blanks & Essay lines */
+        .blank-line {
+            display: inline-block;
+            border-bottom: 1.5px dotted #0f766e;
+            min-width: 140px;
+            margin: 0 4px;
+        }
+        .essay-space {
+            border-bottom: 1px dashed #cbd5e1;
+            height: 24px;
+            margin-top: 6px;
+        }
+
+        @media print {
+            *, *::before, *::after {
+                box-shadow: none !important;
+                text-shadow: none !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            body { padding: 0; background: none; }
+            .page {
+                margin: 0;
+                border: none;
+                height: 297mm;
+                break-after: page;
+                page-break-after: always;
+            }
+            .page:last-child { break-after: auto; page-break-after: auto; }
+        }
+    </style>
+<style data-bard-injected="true">
+@media screen {
+    html {
+        background-color: #ffffff;
+    }
+    body {
+        padding: 8px 0 24px 0;
+    }
+}
+@media screen and (prefers-color-scheme: dark) {
+    html {
+        background-color: #1f1f1f;
+    }
+}
+@media screen and (max-width: 600px) {
+    body {
+        padding: 4px 0 16px 0;
+        margin: 0 auto;
+    }
+}
+</style></head>
+<body>
+    <div contenteditable="true">
+        
+        <!-- HALAMAN 1 -->
+        <!-- page 1 budget (Standard): header 60 + petunjuk 30 + sec A 14 + PG (1-5) 120 + sec B 14 + PGK (6-7) 110 + gaps 60 = 408 / 460 words -->
+        <section class="page">
+            <div class="page-content">
+                
+                <!-- Kop Naskah Soal -->
+                <div class="header-box">
+                    <div class="header-title">
+                        ASESMEN TENGAH SEMESTER (ATS) GANJIL<br>
+                        <span style="font-size: 10pt; font-weight: 600;">SD NEGERI 2 NGASEM — TAHUN PELAJARAN 2026/2027</span>
+                    </div>
+                    <table class="meta-table">
+                        <tbody><tr>
+                            <td class="meta-label">Mata Pelajaran</td>
+                            <td class="meta-dots">:</td>
+                            <td class="meta-val">Pendidikan Agama Islam &amp; BP</td>
+                            <td class="meta-label">Hari / Tanggal</td>
+                            <td class="meta-dots">:</td>
+                            <td class="meta-val">Senin / 19 September 2026</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">Kelas / Fase</td>
+                            <td class="meta-dots">:</td>
+                            <td class="meta-val">IV (Empat) / Fase B</td>
+                            <td class="meta-label">Nama Siswa</td>
+                            <td class="meta-dots">:</td>
+                            <td class="meta-val">..................................</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-label">Waktu</td>
+                            <td class="meta-dots">:</td>
+                            <td class="meta-val">90 Menit</td>
+                            <td class="meta-label">Nomor Absen</td>
+                            <td class="meta-dots">:</td>
+                            <td class="meta-val">..................................</td>
+                        </tr>
+                    </tbody></table>
+                </div>
+
+                <!-- Petunjuk Umum -->
+                <div class="petunjuk-box">
+                    <div class="petunjuk-title">PETUNJUK UMUM:</div>
+                    <ol class="petunjuk-list">
+                        <li>Tulislah nama dan nomor absenmu pada kolom yang telah disediakan di atas!</li>
+                        <li>Bacalah setiap soal dengan teliti sebelum memberikan jawaban!</li>
+                        <li>Kerjakan soal yang kamu anggap paling mudah terlebih dahulu!</li>
+                    </ol>
+                </div>
+
+                <!-- A. PILIHAN GANDA -->
+                <div class="section-header">
+                    <span>A. PILIHAN GANDA (Nomor 1 – 5)</span>
+                    <span class="section-desc">Pilihlah satu jawaban A, B, C, atau D yang paling benar!</span>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">1.</span><span class="q-body">Perilaku yang baik dan terpuji yang sesuai dengan ajaran agama Islam dinamakan ....</span></div>
+                    <div class="options-grid">
+                        <div class="opt-item"><span class="opt-letter">A.</span> Fikih</div>
+                        <div class="opt-item"><span class="opt-letter">C.</span> Akhlak</div>
+                        <div class="opt-item"><span class="opt-letter">B.</span> Tauhid</div>
+                        <div class="opt-item"><span class="opt-letter">D.</span> Syariat</div>
+                    </div>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">2.</span><span class="q-body">Salah satu amalan yang sangat dicintai oleh Allah Swt. dalam lingkungan keluarga adalah ....</span></div>
+                    <div class="options-grid">
+                        <div class="opt-item"><span class="opt-letter">A.</span> Berbakti kepada orang tua</div>
+                        <div class="opt-item"><span class="opt-letter">C.</span> Bertengkar dengan adik</div>
+                        <div class="opt-item"><span class="opt-letter">B.</span> Membantah perintah ibu</div>
+                        <div class="opt-item"><span class="opt-letter">D.</span> Acuh kepada keluarga</div>
+                    </div>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">3.</span><span class="q-body">Surah An-Nasr diturunkan di kota Madinah dan tergolong surah Madaniyah. Kata <em>An-Nasr</em> memiliki arti ....</span></div>
+                    <div class="options-grid">
+                        <div class="opt-item"><span class="opt-letter">A.</span> Pertolongan</div>
+                        <div class="opt-item"><span class="opt-letter">C.</span> Pembukaan</div>
+                        <div class="opt-item"><span class="opt-letter">B.</span> Kemenangan</div>
+                        <div class="opt-item"><span class="opt-letter">D.</span> Waktu Subuh</div>
+                    </div>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">4.</span><span class="q-body">Allah Swt. memiliki Asmaulhusna <em>Al-Gaffar</em>, yang artinya Allah Swt. Maha ....</span></div>
+                    <div class="options-grid">
+                        <div class="opt-item"><span class="opt-letter">A.</span> Pembuka pintu rahmat</div>
+                        <div class="opt-item"><span class="opt-letter">C.</span> Maha Lembut</div>
+                        <div class="opt-item"><span class="opt-letter">B.</span> Pengampun segala dosa</div>
+                        <div class="opt-item"><span class="opt-letter">D.</span> Maha Bijaksana</div>
+                    </div>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">5.</span><span class="q-body">Sikap yang harus kita tunjukkan ketika orang tua memberikan nasihat kebaikan adalah ....</span></div>
+                    <div class="options-grid">
+                        <div class="opt-item"><span class="opt-letter">A.</span> Acuh tak acuh</div>
+                        <div class="opt-item"><span class="opt-letter">C.</span> Pura-pura tidak mendengar</div>
+                        <div class="opt-item"><span class="opt-letter">B.</span> Mendengarkan dan mematuhi</div>
+                        <div class="opt-item"><span class="opt-letter">D.</span> Membantah dengan nada keras</div>
+                    </div>
+                </div>
+
+                <!-- B. PILIHAN GANDA KOMPLEKS (Bagian 1) -->
+                <div class="section-header">
+                    <span>B. PILIHAN GANDA KOMPLEKS (Nomor 6 – 10)</span>
+                    <span class="section-desc">Pilihlah DUA (2) jawaban yang benar dengan memberi tanda [✓]!</span>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">6.</span><span class="q-body">Pesan pokok yang terkandung di dalam Surah An-Nasr adalah ....</span></div>
+                    <div class="complex-options">
+                        <div class="cb-item"><div class="cb-box"></div> Pertolongan Allah Swt. pasti akan datang bagi orang-orang beriman.</div>
+                        <div class="cb-item"><div class="cb-box"></div> Perintah untuk berkurban dan melaksanakan shalat.</div>
+                        <div class="cb-item"><div class="cb-box"></div> Manusia berbondong-bondong masuk ke dalam agama Allah Swt.</div>
+                        <div class="cb-item"><div class="cb-box"></div> Kewajiban menunaikan ibadah haji ke Makkah Al-Mukarramah.</div>
+                    </div>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">7.</span><span class="q-body">Pernyataan yang BENAR mengenai pengamalan Asmaulhusna di bawah ini adalah ....</span></div>
+                    <div class="complex-options">
+                        <div class="cb-item"><div class="cb-box"></div> Al-Lathif artinya Allah Swt. Maha Lembut dan Maha Halus.</div>
+                        <div class="cb-item"><div class="cb-box"></div> Al-Gaffar dapat diamalkan dengan cara menyebarkan aib orang lain.</div>
+                        <div class="cb-item"><div class="cb-box"></div> Cara mengamalkan Al-Gaffar adalah dengan menutup aib dan kesalahan sesama.</div>
+                        <div class="cb-item"><div class="cb-box"></div> Al-Wahhab mengajarkan kita untuk menjadi pribadi yang kikir dan pelit.</div>
+                    </div>
+                </div>
+
+            </div>
+            <footer class="page-footer">
+                <span>ATS Ganjil PAI &amp; BP - Kelas IV SD</span>
+                <span>Halaman 1 dari 3</span>
+            </footer>
+        </section>
+
+        <!-- HALAMAN 2 -->
+        <!-- page 2 budget (Standard): PGK (8-10) 150 + sec C 14 + BS (11-14) 160 + sec D 14 + Match (15) 60 + gaps 50 = 448 / 460 words -->
+        <section class="page">
+            <div class="page-content">
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">8.</span><span class="q-body">Sikap dan amalan berikut yang merupakan wujud berbakti kepada kedua orang tua adalah ....</span></div>
+                    <div class="complex-options">
+                        <div class="cb-item"><div class="cb-box"></div> Mendengarkan dan mematuhi nasehat baik orang tua dengan ikhlas.</div>
+                        <div class="cb-item"><div class="cb-box"></div> Membantu pekerjaan rumah tangga sesuai kemampuan diri.</div>
+                        <div class="cb-item"><div class="cb-box"></div> Mengabaikan panggilan orang tua saat sedang bermain game.</div>
+                        <div class="cb-item"><div class="cb-box"></div> Meminta uang saku secara paksa dan berlebihan.</div>
+                    </div>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">9.</span><span class="q-body">Perilaku terpuji yang menunjukkan meneladani sifat <em>Al-Lathif</em> dalam kehidupan sehari-hari adalah ....</span></div>
+                    <div class="complex-options">
+                        <div class="cb-item"><div class="cb-box"></div> Berbicara dengan lemah lembut dan sopan kepada siapa saja.</div>
+                        <div class="cb-item"><div class="cb-box"></div> Bersikap kasar saat menasihati teman yang bersalah.</div>
+                        <div class="cb-item"><div class="cb-box"></div> Membantu sesama dengan tulus dan penuh kasih sayang.</div>
+                        <div class="cb-item"><div class="cb-box"></div> Memamerkan kebaikan yang telah dilakukan di media sosial.</div>
+                    </div>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">10.</span><span class="q-body">Pernyataan berikut yang merupakan bentuk Taubatan Nasuha yang benar adalah ....</span></div>
+                    <div class="complex-options">
+                        <div class="cb-item"><div class="cb-box"></div> Memohon ampunan kepada Allah Swt. dengan sungguh-sungguh.</div>
+                        <div class="cb-item"><div class="cb-box"></div> Mengulangi perbuatan dosa yang sama di kemudian hari.</div>
+                        <div class="cb-item"><div class="cb-box"></div> Berjanji dengan sepenuh hati tidak akan mengulangi kesalahan/dosa.</div>
+                        <div class="cb-item"><div class="cb-box"></div> Meminta maaf kepada sesama hanya saat dipaksa oleh orang tua.</div>
+                    </div>
+                </div>
+
+                <!-- C. BENAR / SALAH -->
+                <div class="section-header">
+                    <span>C. BENAR / SALAH (Nomor 11 – 14)</span>
+                    <span class="section-desc">Berilah tanda centang [✓] pada kolom Benar atau Salah!</span>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">11.</span><span class="q-body">Perhatikan dua pernyataan tentang Surah An-Nasr dan Taubat berikut:</span></div>
+                    <table class="exam-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 35px;">No</th>
+                                <th>Pernyataan</th>
+                                <th class="col-cb">Benar</th>
+                                <th class="col-cb">Salah</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-center">1</td>
+                                <td>Surah An-Nasr mengabarkan tentang pertolongan Allah Swt. dan kemenangan umat Islam.</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="col-center">2</td>
+                                <td>Taubatan Nasuha yaitu taubat yang dilakukan dengan pura-pura dan diulangi kembali di lain hari.</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">12.</span><span class="q-body">Perhatikan dua pernyataan tentang Akhlak kepada Keluarga berikut:</span></div>
+                    <table class="exam-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 35px;">No</th>
+                                <th>Pernyataan</th>
+                                <th class="col-cb">Benar</th>
+                                <th class="col-cb">Salah</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-center">1</td>
+                                <td>Kita wajib mentaati perintah orang tua dalam segala hal, termasuk dalam perbuatan buruk.</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="col-center">2</td>
+                                <td>Keluarga yang saling menghormati dan menyayangi akan menciptakan kehidupan rukun dan bahagia.</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">13.</span><span class="q-body">Perhatikan dua pernyataan tentang Asmaulhusna berikut:</span></div>
+                    <table class="exam-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 35px;">No</th>
+                                <th>Pernyataan</th>
+                                <th class="col-cb">Benar</th>
+                                <th class="col-cb">Salah</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-center">1</td>
+                                <td><em>Al-Fattah</em> artinya Allah Swt. Maha Membuka pintu rahmat dan rezeki bagi hamba-Nya.</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="col-center">2</td>
+                                <td>Menutup kekhilafan atau cela teman adalah bentuk peneladanan Asmaulhusna <em>Al-Gaffar</em>.</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">14.</span><span class="q-body">Perhatikan dua pernyataan tentang Perilaku Terpuji berikut:</span></div>
+                    <table class="exam-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 35px;">No</th>
+                                <th>Pernyataan</th>
+                                <th class="col-cb">Benar</th>
+                                <th class="col-cb">Salah</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-center">1</td>
+                                <td>Mendoakan kedua orang tua hanya boleh dilakukan ketika mereka sudah meninggal dunia saja.</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="col-center">2</td>
+                                <td>Menjaga kerukunan antar anggota keluarga termasuk contoh penerapan akhlak mahmudah.</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <footer class="page-footer">
+                <span>ATS Ganjil PAI &amp; BP - Kelas IV SD</span>
+                <span>Halaman 2 dari 3</span>
+            </footer>
+        </section>
+
+        <!-- HALAMAN 3 -->
+        <!-- page 3 budget (Standard): sec D 14 + Match (15-17) 120 + sec E 14 + Isian (18-22) 80 + sec F 14 + Uraian (23-25) 150 + gaps 50 = 442 / 460 words -->
+        <section class="page">
+            <div class="page-content">
+
+                <!-- D. MENJODOHKAN -->
+                <div class="section-header">
+                    <span>D. MENJODOHKAN (Nomor 15 – 17)</span>
+                    <span class="section-desc">Jodohkanlah pernyataan di Kolom A dengan jawaban di Kolom B!</span>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">15.</span><span class="q-body">Pasangkanlah Asmaulhusna di Kolom A dengan maknanya yang tepat di Kolom B!</span></div>
+                    <table class="exam-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 40%;">Kolom A (Asmaulhusna)</th>
+                                <th style="width: 20%; text-align: center;">Pasangan</th>
+                                <th style="width: 40%;">Kolom B (Makna / Arti)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. Al-Gaffar</td>
+                                <td class="col-center">1 - . . . . .</td>
+                                <td>A. Maha Membuka pintu rahmat</td>
+                            </tr>
+                            <tr>
+                                <td>2. Al-Fattah</td>
+                                <td class="col-center">2 - . . . . .</td>
+                                <td>B. Maha Lembut dan Penyayang</td>
+                            </tr>
+                            <tr>
+                                <td>3. Al-Lathif</td>
+                                <td class="col-center">3 - . . . . .</td>
+                                <td>C. Maha Pengampun segala dosa</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">16.</span><span class="q-body">Pasangkanlah pernyataan di Kolom A dengan istilah/makna yang sesuai di Kolom B!</span></div>
+                    <table class="exam-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 40%;">Kolom A (Pernyataan)</th>
+                                <th style="width: 20%; text-align: center;">Pasangan</th>
+                                <th style="width: 40%;">Kolom B (Istilah / Makna)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. Taubat dengan sebenar-benarnya taubat</td>
+                                <td class="col-center">1 - . . . . .</td>
+                                <td>A. Taubatan Nasuha</td>
+                            </tr>
+                            <tr>
+                                <td>2. Perilaku baik yang sesuai ajaran Islam</td>
+                                <td class="col-center">2 - . . . . .</td>
+                                <td>B. Amalan yang dicintai Allah Swt.</td>
+                            </tr>
+                            <tr>
+                                <td>3. Berbakti kepada kedua orang tua</td>
+                                <td class="col-center">3 - . . . . .</td>
+                                <td>C. Akhlak Terpuji (Mahmudah)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">17.</span><span class="q-body">Pasangkanlah perilaku di Kolom A dengan Asmaulhusna yang bersesuaian di Kolom B!</span></div>
+                    <table class="exam-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 40%;">Kolom A (Perilaku / Peristiwa)</th>
+                                <th style="width: 20%; text-align: center;">Pasangan</th>
+                                <th style="width: 40%;">Kolom B (Asmaulhusna)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. Memaafkan kesalahan teman yang tidak sengaja</td>
+                                <td class="col-center">1 - . . . . .</td>
+                                <td>A. Al-Lathif</td>
+                            </tr>
+                            <tr>
+                                <td>2. Bertutur kata santun dan halus kepada guru</td>
+                                <td class="col-center">2 - . . . . .</td>
+                                <td>B. Al-Gaffar</td>
+                            </tr>
+                            <tr>
+                                <td>3. Membuka jalan keluar atas kesulitan orang lain</td>
+                                <td class="col-center">3 - . . . . .</td>
+                                <td>C. Al-Fattah</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- E. ISIAN SINGKAT -->
+                <div class="section-header">
+                    <span>E. ISIAN SINGKAT (Nomor 18 – 22)</span>
+                    <span class="section-desc">Isilah titik-titik di bawah ini dengan jawaban singkat dan tepat!</span>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">18.</span><span class="q-body">Surah An-Nasr merupakan surah ke-110 dalam Al-Qur&#39;an yang terdiri dari <span class="blank-line"></span> ayat.</span></div>
+                </div>
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">19.</span><span class="q-body">Allah Swt. menutupi dosa dan kesalahan hamba-Nya karena Allah memiliki sifat <span class="blank-line"></span>.</span></div>
+                </div>
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">20.</span><span class="q-body">Mengamalkan sifat Al-Gaffar dalam kehidupan sehari-hari dilakukan dengan cara menutup <span class="blank-line"></span> orang lain.</span></div>
+                </div>
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">21.</span><span class="q-body">Kepada sesama saudara di rumah, kita harus saling menyayangi dan tidak boleh <span class="blank-line"></span>.</span></div>
+                </div>
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">22.</span><span class="q-body">Menjaga nama baik keluarga dan menghormati orang tua merupakan contoh penerapan <span class="blank-line"></span> terpuji.</span></div>
+                </div>
+
+                <!-- F. URAIAN / ESSAY -->
+                <div class="section-header">
+                    <span>F. URAIAN / ESSAY (Nomor 23 – 25)</span>
+                    <span class="section-desc">Jawablah pertanyaan-pertanyaan berikut dengan jelas dan benar!</span>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">23.</span><span class="q-body">Sebutkan apa yang diperintahkan oleh Allah Swt. dalam Surah An-Nasr ketika kita memperoleh pertolongan atau kemenangan!</span></div>
+                    <div class="essay-space"></div>
+                    <div class="essay-space"></div>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">24.</span><span class="q-body">Jelaskan arti dari Asmaulhusna <em>Al-Gaffar</em> dan tuliskan bagaimana cara kita mengamalkannya terhadap sesama teman!</span></div>
+                    <div class="essay-space"></div>
+                    <div class="essay-space"></div>
+                </div>
+
+                <div class="q-block">
+                    <div class="q-text"><span class="q-num">25.</span><span class="q-body">Tuliskan 3 (tiga) contoh perilaku berbakti kepada orang tua yang dapat kamu lakukan di rumah sehari-hari!</span></div>
+                    <div class="essay-space"></div>
+                    <div class="essay-space"></div>
+                </div>
+
+            </div>
+            <footer class="page-footer">
+                <span>ATS Ganjil PAI &amp; BP - Kelas IV SD</span>
+                <span>Halaman 3 dari 3</span>
+            </footer>
+        </section>
+
+    </div>
+
+<script data-bard-injected="true">
+(function() {
+  async function fetchFifeImageBlobUsingAlr(urlString) {
+    if (urlString.startsWith('blob:') || urlString.startsWith('data:')) {
+      throw new Error('Input URL is already a blob or data URL.');
+    }
+    var url = new URL(urlString, window.location.href);
+    url.searchParams.set('alr', 'yes');
+    for (var i = 0; i < 5; i++) {
+      var response = await fetch(url.toString(), {credentials: 'include'});
+      if (!response.ok) {
+        throw new Error('Fetch received not OK response: ' + response.status);
+      }
+      var contentType = response.headers.get('content-type');
+      if (!contentType || !contentType.startsWith('text/plain')) {
+        var blob = await response.blob();
+        if (blob.size > 0 && blob.type.startsWith('image/')) {
+          return blob;
+        }
+        throw new Error('Fetched blob is not a valid image.');
+      }
+      url = new URL(await response.text());
+    }
+    throw new Error('Exceeded maximum number of redirects.');
+  }
+
+  async function updateImageSourcesUsingAlr() {
+    var imgs = Array.from(document.querySelectorAll('img'));
+    await Promise.all(imgs.map(async function(img) {
+      if (img.src && img.src.includes('googleusercontent')) {
+        try {
+          var blob = await fetchFifeImageBlobUsingAlr(img.src);
+          img.src = URL.createObjectURL(blob);
+        } catch (e) {}
+      }
+    }));
+
+    var elements = document.querySelectorAll('[style*="googleusercontent"]');
+    var urlRegex = /url\((['"]?)(https?:\/\/.*?googleusercontent.*?)\1\)/;
+    await Promise.all(Array.from(elements).map(async function(el) {
+      var bg = el.style.backgroundImage;
+      var match = bg ? bg.match(urlRegex) : null;
+      if (match && match[2]) {
+        try {
+          var blob = await fetchFifeImageBlobUsingAlr(match[2]);
+          var blobUrl = URL.createObjectURL(blob);
+          el.style.backgroundImage = bg.replace(match[2], blobUrl);
+        } catch (e) {}
+      }
+    }));
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', updateImageSourcesUsingAlr);
+  } else {
+    updateImageSourcesUsingAlr();
+  }
+})();
+</script></body></html>

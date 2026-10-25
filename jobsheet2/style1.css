@@ -1,0 +1,70 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+.container-satu {
+    width: 1000px;
+    margin: 50px auto;
+    background-color: #fff ;
+    padding: 20px ;
+    box-sizing: border-box;
+    display: flex;
+}
+
+/* Pengaturan Kolom Utama (Tengah) */
+.kolom-utama {
+    flex: 2;         /* Ukuran kolom lebih lebar */
+    order: 2;        /* Memaksa elemen ini berada di urutan kedua (tengah) */
+    background-color: #f9f9f9;
+    padding: 15px;
+}
+
+/* Pengaturan Sidebar Satu (Kiri) */
+.sidebar-satu {
+    flex: 1;         /* Ukuran kolom samping */
+    order: 1;        /* Memaksa elemen ini berada di urutan pertama (kiri) */
+    background-color: #fff0f5; /* Permainan warna background menarik */
+    padding: 15px;
+}
+
+/* Pengaturan Sidebar Dua (Kanan) */
+.sidebar-dua {
+    flex: 1;         /* Ukuran kolom samping */
+    order: 3;        /* Memaksa elemen ini berada di urutan ketiga (kanan) */
+    background-color: #e6f7ff; /* Permainan warna background menarik */
+    padding: 15px;
+}
+
+/* Tambahan styling agar list dan link rapi */
+.sidebar-satu ul {
+    padding-left: 20px;
+}
+
+.sidebar-satu a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.sidebar-satu a:hover {
+    text-decoration:underline;
+}
+
+body {
+    background: url('wawww.jpg');
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: 100%;
+    color: black;
+}
+
+.gambar {
+    width: 100px;
+}
