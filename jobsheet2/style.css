@@ -1,0 +1,27 @@
+h2{
+    color : blue;
+    font-family : trebuchet ms;
+    text-align : center;
+
+}
+.kotak{
+    padding: 25px;
+    width: 100px;
+    color: darkblue;
+    margin: 10px;
+    background:aqua;
+}
+#kotak{
+    width: 150px;
+    color: darkblue;
+    background: gray;
+    padding: 25px;
+}
+
+body {
+    background: url('wawww.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: black;
+}
